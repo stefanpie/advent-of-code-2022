@@ -1,7 +1,7 @@
-import itertools
-import functools
-import copy
-import os
+# import itertools
+# import functools
+# import copy
+# import os
 from pathlib import Path
 
 script_dir = Path(__file__).parent
@@ -14,7 +14,6 @@ if __name__ == "__main__":
 
     groups_raw = input_raw.split("\n\n")
     groups = {idx: list(map(int, group.split("\n"))) for idx, group in enumerate(groups_raw)}
-    
 
     groups_sum = {idx: sum(group) for idx, group in groups.items()}
     group_largest_sum_idx, group_largest_sum  = max(groups_sum.items(), key=lambda x: x[1])
