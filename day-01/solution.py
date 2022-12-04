@@ -1,7 +1,3 @@
-# import itertools
-# import functools
-# import copy
-# import os
 from pathlib import Path
 
 script_dir = Path(__file__).parent
